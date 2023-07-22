@@ -22,3 +22,8 @@ st.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Banana', 'Canta
 # Display the table on the page.
 st.dataframe(my_fruit_list)
 
+#
+fruits_selected = st.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Banana', 'Cantaloupe'])
+fruits_to_show =my_fruit_list.loc[fruits_selected]
+#
+st.dataframe(fruits_to_show)
