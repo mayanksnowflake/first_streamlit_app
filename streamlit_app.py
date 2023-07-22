@@ -1,3 +1,4 @@
-import streamlit
+import streamlit as st
 
-streamlit.title('My parents New Healthy Diner')
+st.title('This is a title')
+st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
